@@ -1,0 +1,72 @@
+html,body,ul,li {
+	margin:0;
+	padding: 0;
+	font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+}
+
+img {
+  border: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+.clearfix{
+	clear:both;
+}
+.clearfix::before, .clearfix::after {
+	content:'';
+	clear:both;
+	display: block;
+}
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot?t=1595487302522'); /* IE9 */
+  src: url('../font/iconfont.eot?t=1595487302522#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff?t=1595487302522') format('woff'),
+  url('../font/iconfont.ttf?t=1595487302522') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('../font/iconfont.svg?t=1595487302522#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon-test:before {
+  content: "\e63b";
+}
+
+.icon-icon-test1:before {
+  content: "\e63c";
+}
+
+.icon-icon-test2:before {
+  content: "\e63d";
+}
+
+.icon-icon-test3:before {
+  content: "\e658";
+}
+
+.icon-icon-test4:before {
+  content: "\e659";
+}
+
+.icon-icon-test5:before {
+  content: "\e65a";
+}
+
+.icon-icon-test6:before {
+  content: "\e65b";
+}

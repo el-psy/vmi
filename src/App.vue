@@ -1,32 +1,65 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <mi-header></mi-header>
+    <ad></ad>
+    <div class="main-content clearfix">
+      <div class="container">
+        <sangou></sangou>
+        <shouji></shouji>
+        <jiadian></jiadian>
+        <zhineng></zhineng>
+        <dapei></dapei>
+        <peijian></peijian>
+        <zhoubian></zhoubian>
+      </div>
     </div>
-    <router-view/>
+    <foot-er></foot-er>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+<script>
+import MiHeader from './components/Header.vue'
+import Ad from './components/ad.vue'
+import Sangou from './components/sangou.vue'
+import Shouji from './components/shouji.vue'
+import Jiadian from './components/jiadian.vue'
+import Footer from './components/footer.vue'
+import Zhineng from './components/zhineng.vue'
+import Dapei from './components/dapei.vue'
+import Peijian from './components/peijian.vue'
+import Zhoubian from './components/zhoubian.vue'
+export default {
+  name: 'HelloWorld',
+  props: {
+    msg: String
+  },
+  components: {
+    'mi-header': MiHeader,
+    'ad':Ad,
+    'sangou':Sangou,
+    'shouji':Shouji,
+    'jiadian':Jiadian,
+    'zhineng':Zhineng,
+    'dapei':Dapei,
+    'peijian':Peijian,
+    'zhoubian':Zhoubian,
+    'foot-er':Footer
+  }
 }
+</script>
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+<style lang="less" scoped>
+  .main-content {
+    padding-top: 4px;
+    padding-bottom: 12px;
+    background: #f5f5f5;
+    .container {
+      width: 1226px;
+      margin-right: auto;
+      margin-left: auto;
+      background: #f5f5f5;
+    }
+  }
 </style>
